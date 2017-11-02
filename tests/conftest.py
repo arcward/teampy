@@ -1,17 +1,6 @@
 import pytest
-from configparser import ConfigParser
 from teampy import APIClient
 
-
-# @pytest.fixture(scope="module")
-# def api_client():
-#     parser = ConfigParser()
-#     parser.read('conf.ini')
-#     return APIClient(
-#         parser['DEFAULT']['instance'],
-#         parser['DEFAULT']['username'],
-#         parser['DEFAULT']['access_token']
-#     )
 
 @pytest.fixture(scope='module')
 def api_client():

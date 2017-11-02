@@ -1,14 +1,6 @@
 import pytest
 from teampy import APIClient
 
-# @pytest.fixture(scope='module')
-# def api_client():
-#     return APIClient(
-#         instance="http://localhost:8080",
-#         username="DOMAIN\myuser",
-#         access_token="mock_token"
-#     )
-
 
 def test_api_client_instance(api_client):
     assert api_client.instance == "http://localhost:8080"
